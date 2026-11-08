@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f5f4ef">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>Taglist</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Taglist home"><span class="brand-mark">▦</span> taglist</a>
+      <button class="icon-button" id="scanTop" aria-label="Scan a QR code">⌗</button>
+    </header>
+    <section id="homeView">
+      <div class="intro"><p class="eyebrow">YOUR SPACE</p><h1>Lists that<br>know where to go.</h1><p class="subhead">Create a list and get a QR code for quick access whenever you scan it.</p></div>
+      <button class="primary wide" id="newList">＋ &nbsp; Create a list</button>
+      <div class="section-head"><h2>Your lists</h2><span id="listCount" class="muted"></span></div>
+      <div id="lists" class="list-stack"></div>
+      <div id="emptyState" class="empty"><span class="empty-icon">▤</span><h3>Start with a list</h3><p>Make a list for anything. You can link a QR code to it whenever you’re ready.</p></div>
+    </section>
+    <section id="detailView" class="hidden"></section>
+    <section id="scannerView" class="hidden">
+      <button class="back-link" id="closeScanner">‹ &nbsp; Back</button>
+      <div class="intro compact"><p class="eyebrow">QR SCANNER</p><h1>Point and scan.</h1><p class="subhead">Scan a code to connect it to one of your lists or open its linked list.</p></div>
+      <div id="reader" class="reader"><div class="scan-frame"><i></i></div></div>
+      <p id="scanStatus" class="scan-status">Camera is ready when you are.</p>
+      <button id="manualCode" class="secondary wide">Enter code manually</button>
+    </section>
+  </main>
+  <nav class="bottom-nav"><button class="nav-active" id="homeTab"><span>▤</span> Lists</button><button id="scanTab"><span>⌗</span> Scan</button></nav>
+  <dialog id="listDialog"><form method="dialog" id="listForm"><button class="dialog-close" value="cancel" aria-label="Close">×</button><p class="eyebrow">NEW LIST</p><h2>What’s this list for?</h2><label class="field-label" for="listName">List name</label><input id="listName" maxlength="48" placeholder="e.g. Pantry restock" required><button class="primary wide" value="create">Create list</button></form></dialog>
+  <dialog id="linkDialog"><form method="dialog" id="linkForm"><button class="dialog-close" value="cancel" aria-label="Close">×</button><p class="eyebrow">NEW QR CODE</p><h2>Connect to a list</h2><p class="subhead" id="codePreview"></p><label class="field-label" for="targetList">Choose a list</label><select id="targetList"></select><button class="primary wide" value="link">Connect code</button></form></dialog>
+  <dialog id="itemDialog"><form method="dialog" id="itemForm"><button class="dialog-close" value="cancel" aria-label="Close">×</button><p class="eyebrow">ADD TO LIST</p><h2>Add an item</h2><label class="field-label" for="itemName">Item name</label><input id="itemName" maxlength="100" placeholder="What do you need?" required><button class="primary wide" value="add">Add item</button></form></dialog>
+  <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+  <script src="app.js?v=4"></script>
+</body>
+</html>
