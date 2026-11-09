@@ -1,6 +1,6 @@
 # CALL IN DA BIN
 
-CALL IN DA BIN is an installable iPhone web app with ten fixed QR codes. Give each code its own user-named list and print one code at a time or a full sheet. Scanning a code opens its numbered list on the same device.
+CALL IN DA BIN is an installable iPhone web app with ten fixed QR codes. Give each code its own user-named list and print one code at a time or a full sheet. Each QR opens the hosted app at its numbered slot. Its distinct color also marks the matching list.
 
 ## Run it on iPhone
 
@@ -10,8 +10,9 @@ Lists are saved in that browser on that device. There is no account or cloud syn
 
 ## Features
 
-- Ten persistent, numbered QR codes.
+- Ten persistent, numbered QR codes with distinct matching colors.
 - Name and edit your own list for each code.
 - Add items and check them off.
 - Print one QR code or a sheet of all ten.
+- Exit list setup without creating a list.
 - Scan a printed code to open its list.
