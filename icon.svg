@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2d6a50"/><stop offset="1" stop-color="#173f32"/></linearGradient>
+    <filter id="shadow" x="-.3" y="-.3" width="1.6" height="1.8"><feGaussianBlur stdDeviation="28"/></filter>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <circle cx="512" cy="500" r="330" fill="#d6f078" opacity=".08"/>
+  <ellipse cx="512" cy="824" rx="246" ry="40" fill="#102b22" opacity=".28" filter="url(#shadow)"/>
+  <path d="M284 321h456l-43 465a54 54 0 0 1-54 49H381a54 54 0 0 1-54-49z" fill="#d6f078"/>
+  <path d="M249 274a25 25 0 0 1 25-25h476a25 25 0 0 1 25 25v33H249z" fill="#eff8c7"/>
+  <path d="M422 194a23 23 0 0 1 23-23h134a23 23 0 0 1 23 23v31H422z" fill="#eff8c7"/>
+  <rect x="369" y="422" width="286" height="286" rx="30" fill="#245b45"/>
+  <g fill="#f5f4ef">
+    <path fill-rule="evenodd" d="M401 454h91v91h-91zm24 24v43h43v-43zM532 454h91v91h-91zm24 24v43h43v-43zM401 585h91v91h-91zm24 24v43h43v-43z"/>
+    <path d="M515 565h34v34h-34zm48 0h34v34h-34zm-48 48h34v34h-34zm48 48h34v34h-34zm48-48h34v34h-34zm-96 48h34v34h-34zm96-96h34v34h-34z"/>
+  </g>
+  <path d="M302 351h420" stroke="#fff6d8" stroke-opacity=".55" stroke-width="12" stroke-linecap="round"/>
+</svg>
