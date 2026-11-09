@@ -6,7 +6,7 @@ CALL IN DA BIN is an installable iPhone web app with ten fixed QR codes. Give ea
 
 Publish these files to a static HTTPS host, then open the HTTPS address in iPhone Safari. Tap **Share → Add to Home Screen** to install it. The camera scanner loads from a public CDN, so its first use needs an internet connection.
 
-Lists are saved in that browser on that device. There is no account or cloud sync, so the QR codes open the saved lists on the device that created them.
+Lists and items save to local browser storage as you edit, so closing and reopening the app on that device should retain them. There is no account or cloud sync, so the QR codes open the saved lists on the device that created them.
 
 ## Features
 

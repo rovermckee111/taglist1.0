@@ -17,7 +17,7 @@
       <button class="icon-button" id="scanTop" aria-label="Scan a QR code">⌗</button>
     </header>
     <section id="homeView">
-      <div class="intro"><p class="eyebrow">YOUR SPACE</p><h1>Ten codes.<br>Your lists.</h1><p class="subhead">Each numbered QR code always opens its own user-named list. Print a code and scan it with your phone camera.</p></div>
+      <div class="intro"><p class="eyebrow">YOUR SPACE</p><h1>Ten codes.<br>Your lists.</h1><p class="subhead">Lists and items save automatically on this device, so you can close and reopen the app. Each numbered QR code opens its matching list.</p></div>
       <button class="primary wide" id="newList">＋ &nbsp; Set up a list</button>
       <button class="secondary wide print-all-button" id="printAllCodes">Print all 10 codes</button>
       <div class="section-head"><h2>Your 10 QR codes</h2><span id="listCount" class="muted"></span></div>
@@ -38,7 +38,7 @@
   <dialog id="linkDialog"><form method="dialog" id="linkForm"><button class="dialog-close" value="cancel" aria-label="Close">×</button><p class="eyebrow">NEW QR CODE</p><h2>Connect to a list</h2><p class="subhead" id="codePreview"></p><label class="field-label" for="targetList">Choose a list</label><select id="targetList"></select><button class="primary wide" value="link">Connect code</button></form></dialog>
   <dialog id="itemDialog"><form method="dialog" id="itemForm"><button class="dialog-close" value="cancel" aria-label="Close">×</button><p class="eyebrow">ADD TO LIST</p><h2>Add an item</h2><label class="field-label" for="itemName">Item name</label><input id="itemName" maxlength="100" placeholder="What do you need?" required><button class="primary wide" value="add">Add item</button></form></dialog>
   <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
-  <script src="app.js?v=7"></script>
+  <script src="app.js?v=8"></script>
 </body>
 </html>
 
