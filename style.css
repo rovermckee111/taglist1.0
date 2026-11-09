@@ -13,4 +13,11 @@
   #qrOutput{padding:8mm!important;margin:6mm auto!important;border:1px solid #ddd;border-radius:0!important}
   #qrOutput svg{width:75mm!important;height:75mm!important}
   .no-print{display:none!important}
+  .all-qr-dialog[open]{padding:0!important}
+  .all-qr-dialog .qr-sheet{grid-template-columns:repeat(2,1fr);gap:4mm;margin:0}
+  .all-qr-dialog .qr-sheet-item{padding:2mm;gap:1mm;font-size:10pt;break-inside:avoid}
+  .all-qr-dialog .qr-sheet-item svg{width:34mm;height:34mm}
 }
+
+.slot-card{cursor:default}.slot-card .list-info{cursor:pointer}.slot-qr{height:38px!important;min-width:48px;padding:0 12px!important;border-radius:11px!important;font-weight:700!important}.slot-card .list-info p{line-height:1.4}
+.print-all-button{margin-top:10px}.qr-sheet{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:14px 0}.qr-sheet-item{display:grid;justify-items:center;gap:6px;padding:8px;border:1px solid var(--line);text-align:center;font-size:12px}.qr-sheet-item svg{width:136px;height:136px}

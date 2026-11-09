@@ -6,22 +6,23 @@
   <meta name="theme-color" content="#f5f4ef">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <title>Taglist</title>
+  <title>CALL IN DA BIN</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="shell">
     <header class="topbar">
-      <a class="brand" href="#" aria-label="Taglist home"><span class="brand-mark">▦</span> taglist</a>
+      <a class="brand" href="#" aria-label="CALL IN DA BIN home"><span class="brand-mark">▦</span> CALL IN DA BIN</a>
       <button class="icon-button" id="scanTop" aria-label="Scan a QR code">⌗</button>
     </header>
     <section id="homeView">
-      <div class="intro"><p class="eyebrow">YOUR SPACE</p><h1>Lists that<br>know where to go.</h1><p class="subhead">Create a list and get a QR code for quick access whenever you scan it.</p></div>
-      <button class="primary wide" id="newList">＋ &nbsp; Create a list</button>
-      <div class="section-head"><h2>Your lists</h2><span id="listCount" class="muted"></span></div>
+      <div class="intro"><p class="eyebrow">YOUR SPACE</p><h1>Ten codes.<br>Your lists.</h1><p class="subhead">Each numbered QR code always opens its own user-named list. Print a code and scan it with your phone camera.</p></div>
+      <button class="primary wide" id="newList">＋ &nbsp; Set up a list</button>
+      <button class="secondary wide print-all-button" id="printAllCodes">Print all 10 codes</button>
+      <div class="section-head"><h2>Your 10 QR codes</h2><span id="listCount" class="muted"></span></div>
       <div id="lists" class="list-stack"></div>
-      <div id="emptyState" class="empty"><span class="empty-icon">▤</span><h3>Start with a list</h3><p>Make a list for anything. You can link a QR code to it whenever you’re ready.</p></div>
+      <div id="emptyState" class="empty hidden"><span class="empty-icon">▤</span><h3>Pick a code to begin</h3><p>Set up any numbered code with your own list name and items.</p></div>
     </section>
     <section id="detailView" class="hidden"></section>
     <section id="scannerView" class="hidden">
@@ -33,11 +34,11 @@
     </section>
   </main>
   <nav class="bottom-nav"><button class="nav-active" id="homeTab"><span>▤</span> Lists</button><button id="scanTab"><span>⌗</span> Scan</button></nav>
-  <dialog id="listDialog"><form method="dialog" id="listForm"><button class="dialog-close" value="cancel" aria-label="Close">×</button><p class="eyebrow">NEW LIST</p><h2>What’s this list for?</h2><label class="field-label" for="listName">List name</label><input id="listName" maxlength="48" placeholder="e.g. Pantry restock" required><button class="primary wide" value="create">Create list</button></form></dialog>
+  <dialog id="listDialog"><form method="dialog" id="listForm"><button class="dialog-close" value="cancel" formnovalidate aria-label="Exit without creating a list">×</button><p class="eyebrow">SET UP A QR CODE</p><h2>Make a list for this code</h2><label class="field-label" for="slotSelect">QR code number</label><select id="slotSelect"></select><label class="field-label" for="listName">List name</label><input id="listName" maxlength="48" placeholder="e.g. Pantry restock" required><button class="primary wide" value="create">Save list</button><button class="secondary wide" value="cancel" formnovalidate>Exit without creating</button></form></dialog>
   <dialog id="linkDialog"><form method="dialog" id="linkForm"><button class="dialog-close" value="cancel" aria-label="Close">×</button><p class="eyebrow">NEW QR CODE</p><h2>Connect to a list</h2><p class="subhead" id="codePreview"></p><label class="field-label" for="targetList">Choose a list</label><select id="targetList"></select><button class="primary wide" value="link">Connect code</button></form></dialog>
   <dialog id="itemDialog"><form method="dialog" id="itemForm"><button class="dialog-close" value="cancel" aria-label="Close">×</button><p class="eyebrow">ADD TO LIST</p><h2>Add an item</h2><label class="field-label" for="itemName">Item name</label><input id="itemName" maxlength="100" placeholder="What do you need?" required><button class="primary wide" value="add">Add item</button></form></dialog>
   <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
-  <script src="app.js?v=5"></script>
+  <script src="app.js?v=7"></script>
 </body>
 </html>
 
